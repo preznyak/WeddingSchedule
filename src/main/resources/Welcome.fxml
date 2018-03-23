@@ -2,39 +2,26 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.Light.Distant?>
-<?import javafx.scene.effect.Lighting?>
-<?import javafx.scene.effect.Shadow?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <Label prefHeight="108.0" prefWidth="336.0" text="Welcome to Wedding Schedule" textFill="#3300ff" BorderPane.alignment="CENTER">
+<Pane fx:id="welcomePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.preznyak.weddingschedule.controller.WindowController">
+   <children>
+      <Label layoutX="150.0" layoutY="42.0" text="Wedding Schedule">
          <font>
-            <Font size="24.0" />
+            <Font size="36.0" />
          </font>
       </Label>
-   </top>
-   <center>
-      <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="92.0" prefWidth="180.0" text="Register wedding" BorderPane.alignment="CENTER">
+      <Button fx:id="registerButton" layoutX="68.0" layoutY="190.0" mnemonicParsing="false" text="Register new wedding">
          <font>
-            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+            <Font size="18.0" />
          </font>
-         <effect>
-            <Lighting>
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
-            </Lighting>
-         </effect>
       </Button>
-   </center>
-   <bottom>
-      <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="122.0" text="Show my stuff" BorderPane.alignment="CENTER" />
-   </bottom>
-</BorderPane>
+      <Button fx:id="showButton" layoutX="347.0" layoutY="188.0" mnemonicParsing="false" text="Show my weddings" onAction="#onShowButtonClicked">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
