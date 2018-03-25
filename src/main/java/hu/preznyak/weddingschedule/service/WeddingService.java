@@ -9,9 +9,7 @@ public class WeddingService {
 
     private WeddingDAO weddingDAO;
 
-    public WeddingService(WeddingDAO weddingDAO) {
-        this.weddingDAO = weddingDAO;
-    }
+    public WeddingService(WeddingDAO weddingDAO) { this.weddingDAO = weddingDAO; }
 
     public boolean createWedding(Wedding wedding){
         return weddingDAO.createWedding(wedding);

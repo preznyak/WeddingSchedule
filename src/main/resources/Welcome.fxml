@@ -13,7 +13,7 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button fx:id="registerButton" layoutX="68.0" layoutY="190.0" mnemonicParsing="false" text="Register new wedding">
+      <Button fx:id="registerButton" layoutX="68.0" layoutY="190.0" mnemonicParsing="false" text="Register new wedding" onAction="#onRegisterButtonClicked">
          <font>
             <Font size="18.0" />
          </font>
