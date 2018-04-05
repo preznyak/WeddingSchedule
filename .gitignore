@@ -23,6 +23,7 @@ out/
 
 # Log file
 *.log
+log.txt
 
  Package Files
 *.jar
