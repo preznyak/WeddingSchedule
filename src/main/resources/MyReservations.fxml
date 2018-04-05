@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="reservationsBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.preznyak.weddingschedule.controller.MyReservationsController">
    <top>
       <Label prefHeight="46.0" prefWidth="135.0" text="My Reservations" BorderPane.alignment="CENTER">
          <font>
@@ -16,17 +16,23 @@
       </Label>
    </top>
    <center>
-      <TableView prefHeight="356.0" prefWidth="574.0" BorderPane.alignment="CENTER">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Bride's name" />
-          <TableColumn prefWidth="75.0" text="Groom's name" />
-            <TableColumn prefWidth="75.0" text="Locale" />
-            <TableColumn prefWidth="75.0" text="Date" />
-            <TableColumn prefWidth="75.0" text="Band" />
-            <TableColumn prefWidth="75.0" text="Fotovideo" />
-            <TableColumn prefWidth="75.0" text="Price" />
-            <TableColumn prefWidth="75.0" text="Deposit" />
-        </columns>
+      <TableView fx:id="myReservations" prefHeight="356.0" prefWidth="574.0" BorderPane.alignment="CENTER">
+          <columns>
+              <TableColumn fx:id="brideName" text="Bride Name" />
+              <TableColumn fx:id="groomName" text="Groom Name" />
+              <TableColumn fx:id="locale" prefWidth="91.0" text="Locale" />
+              <TableColumn fx:id="date" prefWidth="107.0" text="Date" />
+              <TableColumn fx:id="bandName" prefWidth="116.0" text="bandName" />
+              <TableColumn fx:id="fotoVideo" prefWidth="115.0" text="FotoVideo" />
+              <TableColumn fx:id="contract" prefWidth="207.0" text="Contract" />
+          </columns>
       </TableView>
    </center>
+    <bottom>
+        <Button fx:id="BackButton" layoutX="347.0" layoutY="188.0" mnemonicParsing="false" text="Back" onAction="#onBackButtonClicked">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Button>
+    </bottom>
 </BorderPane>

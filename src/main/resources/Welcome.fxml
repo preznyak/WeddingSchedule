@@ -5,23 +5,42 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane fx:id="welcomePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.preznyak.weddingschedule.controller.WindowController">
+<Pane fx:id="welcomePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.preznyak.weddingschedule.controller.WindowController">
    <children>
-      <Label layoutX="150.0" layoutY="42.0" text="Wedding Schedule">
+      <Label layoutX="250.0" layoutY="36.0" text="Wedding Schedule">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Button fx:id="registerButton" layoutX="68.0" layoutY="190.0" mnemonicParsing="false" text="Register new wedding" onAction="#onRegisterButtonClicked">
+      <Button fx:id="registerButton" layoutX="120.0" layoutY="170.0" mnemonicParsing="false" onAction="#onRegisterButtonClicked" text="Register new wedding">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="showButton" layoutX="347.0" layoutY="188.0" mnemonicParsing="false" text="Show my weddings" onAction="#onShowButtonClicked">
+      <Button fx:id="showButton" layoutX="483.0" layoutY="168.0" mnemonicParsing="false" onAction="#onShowButtonClicked" text="Show my weddings">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
+      <Label layoutX="172.0" layoutY="284.0" text="My expected income (€): ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="335.0" text="Deposits got (€): ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalIncome"  layoutX="424.0" layoutY="284.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="deposit" layoutX="424.0" layoutY="335.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
