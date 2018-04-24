@@ -4,7 +4,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-.idea/**/*.xml
+.idea/
 WeddingSchedule.iml
 
 # Sensitive or high-churn files:
@@ -15,11 +15,8 @@ WeddingSchedule.iml
 .idea/**/sqlDataSources.xml
 
 # IntelliJ
-out/
+target/
 
- Java template
-### Compiled class file
-*.class
 
 # Log file
 *.log
