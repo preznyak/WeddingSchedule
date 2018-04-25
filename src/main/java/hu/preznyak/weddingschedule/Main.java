@@ -9,10 +9,10 @@ import javafx.stage.Stage;
 /**
  * Main class.
  */
-
 public class Main extends Application {
+
     /**
-     * Launch a standalone JavaFX application
+     * Launch a standalone JavaFX application.
      * @param primaryStage The {@link Stage} where the application will show up
      * @throws Exception if exception occured.
      */
