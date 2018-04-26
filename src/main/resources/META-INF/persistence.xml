@@ -10,7 +10,7 @@
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://sql7.freesqldatabase.com:3306/sql7234710"/>
             <property name="javax.persistence.jdbc.user" value="sql7234710"/>
             <property name="javax.persistence.jdbc.password" value="aEh4XaKrxP"/>
-            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
             <property name="hibernate.show_sql" value="true"/>
